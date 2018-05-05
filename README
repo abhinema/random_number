@@ -1,0 +1,39 @@
+Problem Statement:
+==================
+Find repeated number/string in given set of data.
+
+Solution:
+========
+Solution is divided into two parts:
+1. Generate data of same data type for given count while running app.
+
+in main() function enable any one of the below for any given data type:
+-----------------------------------
+// for unsigned int
+//	cout<<"Repeated Val:"<<main_check(argc, argv,count)<<endl;  
+
+// for char...this wont give you more(1000) unique char and count should be less than 20
+//	cout<<"Repeated Val:"<<main_check(argc, argv,c)<<endl;      
+
+// for string
+//	cout<<"Repeated Val:"<<main_check(argc, argv,check)<<endl;
+  
+// for long
+//	cout<<"Repeated Val:"<<main_check(argc, argv,l)<<endl; 
+
+// for long long
+//	cout<<"Repeated Val:"<<main_check(argc, argv,ll)<<endl;
+-----------------------------------
+Generated data will be stored in a file(name provided while running task).
+
+2. find repeated number.
+
+Build Steps:
+============
+1. #mkdir build 
+2. #cd build
+3. #cmake ..
+4. #make
+5. #cd bin
+6. #./hello <COUNT> <DATA_FILE_NAME>
+
